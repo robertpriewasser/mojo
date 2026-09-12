@@ -1,33 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mojo | Support</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f4f7f6; }
-        .card { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { color: #1a5e63; } /* Your Petrol Green */
-        .btn { background: #1a5e63; color: white; padding: 10px 20px; text-decoration: none; border-radius: 10px; display: inline-block; margin-top: 20px; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #888; text-align: center; }
-        a { color: #1a5e63; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mojo — Gewohnheiten &amp; Mojo Score</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <h1>Mojo Support</h1>
-        <p><strong>Fuel Your Growth.</strong></p>
-        <hr>
-        <h3>FAQ</h3>
-        <p><strong>What is the philosophy of Mojo?</strong><br>Have a lean and efficient Companion to help you to fuel your growth; keep track of your habits and activities. All local at your phone, all protected, all private.</p>
-        <p><strong>How does Mojo use your data?</strong><br>You are the owner of your data. No personlized data sets are distributed or shared with us. It is all locally stored on your phone only. The Import/Export feature allows you to use your data as you wish.</p>
-  
-      <p><strong>Is Mojo Pro+ coming soon?</strong><br>Yes! We are building a system to trade your Mojo for screen time. Stay tuned.</p>
-        <h3>Contact</h3>
-        <p>Need help? Email us at: <a href="mailto:robert@priewasser.net">robert@priewasser.net</a></p>
+
+<header>
+  <div class="wrap navbar">
+    <a class="logo" href="index.html">mojo<span>.</span></a>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="support.html"><span class="lang-de">Support</span><span class="lang-en">Support</span></a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang-btn="de" aria-pressed="true">DE</button>
+        <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-primary btn-sm" href="#app-store">
+        <span class="lang-de">Kostenlos laden</span><span class="lang-en">Get it free</span>
+      </a>
     </div>
-    <div class="footer">
-        <a href="privacy.html">Privacy Policy</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Mojo: Habit Tracker · iOS</span>
+      <h1>
+        <span class="lang-de">Du musst nicht perfekt sein.<br><span>Du musst nur dranbleiben.</span></span>
+        <span class="lang-en block">You don't have to be perfect.<br><span>You just have to keep going.</span></span>
+      </h1>
+      <p class="lede">
+        <span class="lang-de">Mojo hilft dir, gute Gewohnheiten aufzubauen — ohne dass ein einzelner schlechter Tag alles zunichtemacht.</span>
+        <span class="lang-en block">Mojo helps you build good habits — without letting one bad day undo everything.</span>
+      </p>
+      <p class="lede-sm">
+        <span class="lang-de">Die meisten Habit Tracker lassen dich bei null neu anfangen, sobald du einen Tag verpasst. Mojo nicht.</span>
+        <span class="lang-en block">Most habit trackers make you start over from zero the moment you miss a day. Mojo doesn't.</span>
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#app-store" id="app-store">
+          <span class="lang-de">Kostenlos im App Store laden</span><span class="lang-en">Get it free on the App Store</span>
+        </a>
+        <span class="micro">
+          <span class="lang-de">14 Tage Pro-Testphase inklusive · ohne Zahlungsdaten</span>
+          <span class="lang-en block">14-day Pro trial included · no credit card</span>
+        </span>
+      </div>
+      <div class="chips">
+        <span class="chip"><span class="lang-de">Kein Konto</span><span class="lang-en">No account</span></span>
+        <span class="chip"><span class="lang-de">Keine Cloud</span><span class="lang-en">No cloud</span></span>
+        <span class="chip">iOS 17+</span>
+      </div>
     </div>
+    <div class="shot-wrap">
+      <img class="shot" data-de="mojo_store/dark/6.9/de/01_score.png" data-en="mojo_store/dark/6.9/en/01_score.png"
+           src="mojo_store/dark/6.9/de/01_score.png"
+           data-alt-de="Mojo Score Ansicht: 68, Level Strong, Punkteraster mit Lücken"
+           data-alt-en="Mojo Score view: 68, Strong level, dot grid with gaps"
+           alt="Mojo Score Ansicht: 68, Level Strong, Punkteraster mit Lücken">
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEIN MOJO SCORE ================= -->
+<section class="feature">
+  <div class="wrap feature-grid">
+    <div class="col-text">
+      <span class="kicker"><span class="lang-de">Dein Mojo Score</span><span class="lang-en">Your Mojo Score</span></span>
+      <h2>
+        <span class="lang-de">Ein Rückschlag ist kein Rückschritt.</span>
+        <span class="lang-en block">A setback isn't a step back.</span>
+      </h2>
+      <p class="body-copy">
+        <span class="lang-de">Dein Mojo Score zeigt dir auf einen Blick, wie viel Schwung gerade hinter deinen Gewohnheiten steckt. Verpasst du mal einen Tag, ist das kein Beinbruch — er sackt kurz, und sobald du weitermachst, bist du schnell wieder da, wo du warst. Kein Neustart, kein schlechtes Gewissen.</span>
+        <span class="lang-en block">Your Mojo Score shows at a glance how much momentum is behind your habits. Miss a day, and it's not a big deal — it dips briefly, and the moment you get back to it, you're quickly back where you were. No restarting, no guilt.</span>
+      </p>
+      <div class="stat-row">
+        <div class="chip"><span class="lang-de">Verzeiht Ausrutscher</span><span class="lang-en">Forgives slip-ups</span></div>
+        <div class="chip"><span class="lang-de">Ehrlich, ohne Beschönigung</span><span class="lang-en">Honest, no sugar-coating</span></div>
+        <div class="chip"><span class="lang-de">Kein Neustart bei null</span><span class="lang-en">Never back to zero</span></div>
+      </div>
+    </div>
+    <div class="col-shot">
+      <div class="shot-wrap">
+        <img class="shot" data-de="mojo_store/dark/6.9/de/02_verlauf.png" data-en="mojo_store/dark/6.9/en/02_verlauf.png"
+             src="mojo_store/dark/6.9/de/02_verlauf.png"
+             alt="30-Tage-Verlauf: Einbruch und anschließende Erholung des Mojo Score">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPLE HEALTH ================= -->
+<section class="feature">
+  <div class="wrap feature-grid reverse">
+    <div class="col-text">
+      <span class="kicker with-tag">
+        <span class="lang-de">Automatisch aus Apple Health</span><span class="lang-en">Automatic from Apple Health</span>
+        <span class="tag-pro">PRO</span>
+      </span>
+      <h2>
+        <span class="lang-de">Weniger eintippen. Mehr erledigen.</span>
+        <span class="lang-en block">Less typing. More doing.</span>
+      </h2>
+      <p class="body-copy">
+        <span class="lang-de">Schritte, Schlaf und Bewegung trägt Mojo automatisch für dich aus Apple Health ein. Statt nackter Zahlen siehst du in einem Wort, wie du gerade stehst: „Aktiv“, „Erholt“ oder Zeit für eine Pause.</span>
+        <span class="lang-en block">Steps, sleep and workouts get logged for you automatically from Apple Health. Instead of raw numbers, you see in one word how you're doing right now: "Active", "Rested", or time for a break.</span>
+      </p>
+    </div>
+    <div class="col-shot">
+      <div class="shot-wrap">
+        <img class="shot" data-de="mojo_store/dark/6.9/de/03_abgeleitet.png" data-en="mojo_store/dark/6.9/en/03_abgeleitet.png"
+             src="mojo_store/dark/6.9/de/03_abgeleitet.png"
+             alt="Kategorie Gesundheit mit abgeleiteten Zuständen: Aktiv, Erholt, Regeneration">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ALLES WEITERE (3-up) ================= -->
+<section class="feature">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker"><span class="lang-de">Und ausserdem</span><span class="lang-en">And also</span></span>
+      <h2>
+        <span class="lang-de">Alles, was dranbleiben leicht macht.</span>
+        <span class="lang-en block">Everything that makes sticking with it easy.</span>
+      </h2>
+      <p class="body-copy">
+        <span class="lang-de">Kleine Dinge, die im Alltag den Unterschied machen — ohne Konto, ohne Cloud.</span>
+        <span class="lang-en block">Small things that make the difference day to day — no account, no cloud.</span>
+      </p>
+    </div>
+    <div class="tri">
+      <figure>
+        <div class="shot-wrap">
+          <img class="shot" data-de="mojo_store/dark/6.9/de/04_tracking.png" data-en="mojo_store/dark/6.9/en/04_tracking.png"
+               src="mojo_store/dark/6.9/de/04_tracking.png" alt="Kategorie-Ansicht mit gemischten Eingabetypen">
+        </div>
+        <p>
+          <span class="lang-de"><strong>Dein Tag in Sekunden erfasst.</strong> Ob Haken, Zahl oder Notiz — trag ein, was zählt, und mach weiter.</span>
+          <span class="lang-en block"><strong>Your day, logged in seconds.</strong> Whether it's a tick, a number or a note — log what matters and move on.</span>
+        </p>
+      </figure>
+      <figure>
+        <div class="shot-wrap">
+          <img class="shot" data-de="mojo_store/dark/6.9/de/05_uebersicht.png" data-en="mojo_store/dark/6.9/en/05_uebersicht.png"
+               src="mojo_store/dark/6.9/de/05_uebersicht.png" alt="Kompaktes Dot-Grid über 30 Tage">
+        </div>
+        <p>
+          <span class="lang-de"><strong>Fortschritt, den du siehst.</strong> Das Punkteraster zeigt dir Muster auf einen Blick — genau das, was dich motiviert dranzubleiben.</span>
+          <span class="lang-en block"><strong>Progress you can see.</strong> The dot grid shows patterns at a glance — exactly what keeps you motivated to continue.</span>
+        </p>
+      </figure>
+      <figure>
+        <div class="shot-wrap">
+          <img class="shot" data-de="mojo_store/dark/6.9/de/06_widgets.png" data-en="mojo_store/dark/6.9/en/06_widgets.png"
+               src="mojo_store/dark/6.9/de/06_widgets.png" alt="Home Screen mit zwei Mojo Widgets">
+        </div>
+        <p>
+          <span class="lang-de"><strong>Dranbleiben, ohne die App zu öffnen.</strong> Mit Widgets und Siri hakst du Gewohnheiten direkt vom Homescreen ab.</span>
+          <span class="lang-en block"><strong>Stay on track without opening the app.</strong> With widgets and Siri, check off habits right from your Home Screen.</span>
+        </p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRIVACY TEASER ================= -->
+<section class="privacy">
+  <div class="wrap">
+    <svg class="icon" width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 2L4 5v6c0 5.25 3.4 9.74 8 11 4.6-1.26 8-5.75 8-11V5l-8-3z" stroke="#3ECFB2" stroke-width="1.4" stroke-linejoin="round"/>
+      <path d="M9 12l2 2 4-4" stroke="#3ECFB2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="kicker"><span class="lang-de">Deine Daten</span><span class="lang-en">Your data</span></span>
+    <h2><span class="lang-de">Bleiben bei dir.</span><span class="lang-en">Stays with you.</span></h2>
+    <p class="body-copy">
+      <span class="lang-de">Kein Konto, kein Server, keine Analyse-Dienste. Alles liegt auf deinem Gerät. Export als CSV, vollständiges Backup als JSON. Details dazu in der <a href="privacy.html" style="color:var(--mint); text-decoration:underline;">Datenschutzerklärung</a>.</span>
+      <span class="lang-en block">No account, no server, no analytics services. Everything stays on your device. Export as CSV, full backup as JSON. Details in the <a href="privacy.html" style="color:var(--mint); text-decoration:underline;">Privacy Policy</a>.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing">
+  <div class="wrap">
+    <div class="pricing-head">
+      <span class="kicker"><span class="lang-de">Preise</span><span class="lang-en">Pricing</span></span>
+      <h2><span class="lang-de">14 Tage Pro, kostenlos.</span><span class="lang-en">14 days of Pro, on us.</span></h2>
+      <p class="body-copy">
+        <span class="lang-de">Danach entscheidest du. Ohne Zahlungsdaten während der Testphase.</span>
+        <span class="lang-en block">Then you decide. No payment details during the trial.</span>
+      </p>
+    </div>
+
+    <div class="plans">
+      <div class="plan free">
+        <div class="plan-name">Free</div>
+        <div class="plan-price"><span class="lang-de">Kostenlos, für immer</span><span class="lang-en">Free, forever</span></div>
+        <ul>
+          <li><span class="lang-de">Bis zu 3 Kategorien, 5 Elemente je Kategorie</span><span class="lang-en">Up to 3 categories, 5 items per category</span></li>
+          <li><span class="lang-de">Sechs Eingabetypen</span><span class="lang-en">Six input types</span></li>
+          <li><span class="lang-de">7-Tage-Übersicht</span><span class="lang-en">7-day overview</span></li>
+          <li><span class="lang-de">CSV-Export</span><span class="lang-en">CSV export</span></li>
+        </ul>
+      </div>
+      <div class="plan pro">
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">
+          <span class="lang-de">1,99&nbsp;€ / Monat · 14,99&nbsp;€ / Jahr · 24,99&nbsp;€ einmalig</span>
+          <span class="lang-en block">€1.99 / month · €14.99 / year · €24.99 one-time</span>
+        </div>
+        <ul>
+          <li><span class="lang-de">Apple Health &amp; abgeleitete Zustände</span><span class="lang-en">Apple Health &amp; derived states</span></li>
+          <li><span class="lang-de">Siri &amp; Kurzbefehle</span><span class="lang-en">Siri &amp; Shortcuts</span></li>
+          <li><span class="lang-de">Erinnerungen, die aus deinem Verhalten lernen</span><span class="lang-en">Reminders that learn from your behavior</span></li>
+          <li><span class="lang-de">Unbegrenzte Kategorien &amp; Elemente</span><span class="lang-en">Unlimited categories &amp; items</span></li>
+          <li><span class="lang-de">Ziele &amp; Wochenziele</span><span class="lang-en">Goals &amp; weekly targets</span></li>
+          <li><span class="lang-de">30- &amp; 90-Tage-Übersicht</span><span class="lang-en">30- &amp; 90-day overview</span></li>
+          <li><span class="lang-de">Vollständiges Backup</span><span class="lang-en">Full backup &amp; restore</span></li>
+          <li><span class="lang-de">Vergangene Tage bearbeiten</span><span class="lang-en">Edit past days</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="trial-cta">
+      <a class="btn btn-primary" href="#app-store">
+        <span class="lang-de">14 Tage kostenlos testen</span><span class="lang-en">Start your free 14-day trial</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="font-size:1.05rem;">mojo<span>.</span></div>
+        <p class="foot-tag">
+          <span class="lang-de">Du musst nicht perfekt sein. Du musst nur dranbleiben.</span>
+          <span class="lang-en block">You don't have to be perfect. You just have to keep going.</span>
+        </p>
+      </div>
+      <div class="foot-links">
+        <a href="support.html">
+          <span class="lang-de">Support</span><span class="lang-en">Support</span>
+        </a>
+        <a href="privacy.html">
+          <span class="lang-de">Datenschutz</span><span class="lang-en">Privacy Policy</span>
+        </a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">
+          <span class="lang-de">Nutzungsbedingungen</span><span class="lang-en">Terms of Use</span>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Mojo: Habit Tracker</div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
 </body>
 </html>
